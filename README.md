@@ -1,0 +1,1 @@
+Esta app está echa a modo de práctica.
