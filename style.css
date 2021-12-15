@@ -76,7 +76,7 @@ footer a{
     *{
         margin: 0px;
         padding: 0px;
-        background-color: rgb(240, 239, 239);
+        background-color: rgb(241, 238, 238);
 
     }
     main{
@@ -90,7 +90,7 @@ footer a{
     }
     .container-2{
         display: flex;
-        background-color: rgb(204, 199, 231)
+        background-color: rgb(226, 221, 255)
     }
     .container-2 input, button{
         padding: 5px;
@@ -123,6 +123,9 @@ footer a{
     }
     td{
         display: flex;
+    }
+    footer{
+        font-size: 1rem;
     }
     
 }
