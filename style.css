@@ -58,6 +58,9 @@ td{
 #theData{
     display: flex;
 }
+#tableMobile{
+    display: none;
+}
 footer{
     display: flex;
     justify-content: center;
@@ -67,4 +70,59 @@ footer{
 footer a{
     text-decoration: none;
     color: rgb(74, 74, 182);
+}
+
+@media (max-width: 600px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(240, 239, 239);
+
+    }
+    main{
+        display: flex;
+    }
+    h1{
+        font-size: 26px;
+    }
+    img{
+        height: 30px;
+    }
+    .container-2{
+        display: flex;
+        background-color: rgb(204, 199, 231)
+    }
+    .container-2 input, button{
+        padding: 5px;
+        margin-bottom: 7px;
+    }
+    
+    #theData{
+        display: flex;
+        flex-direction: column;
+    }
+    #userAvatar{
+        height: 50vw;
+        border-radius: 100px;
+        box-shadow: 1px 1px 4px;
+    }
+    #userTitle{
+        color: rgb(8, 8, 8);
+        text-align: center;
+        font-size: 2rem;
+        font-family:monospace;
+        background-color: rgb(215, 210, 245);
+        border-radius: 10px;
+        margin: 0px 0px 15px 0px;
+    }
+    #tableDesk{
+        display: none;
+    }
+    #tableMobile{
+        display:block;
+    }
+    td{
+        display: flex;
+    }
+    
 }

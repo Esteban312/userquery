@@ -1,4 +1,6 @@
 let btnView= document.getElementById("btnView")
+let noDesc = "-"
+let noUrl = "#"
 
 function showMeData(){
     let txtUser= document.getElementById("txtUser").value
@@ -19,8 +21,9 @@ function showMeData(){
                 <div id='userHead'>
                     <img id='userAvatar' src='${data.avatar_url}' alt='${data.login}'s avatar'><br>
                     <h2 id='userTitle'>${data.login}</h2>
+                    
                 </div>
-                <div>
+                <div id="tableDesk">
                     <table border=1>
                         <tr>
                             <td class='tTitle'>ID</td>
@@ -38,16 +41,16 @@ function showMeData(){
                             <td class='tTitle'>Public Repositories</td>
                             <td>${data.public_repos}</td>
                             <td class='tTitle'>Site</td>
-                            <td><a href='${data.blog}' target="_black">Click Here</td>
+                            <td><a href='${data.blog}' target="_black">Click here</a></td>
                         </tr>
                         <tr>
-                            <td colspan='4'>${data.location}</td>
+                            <td colspan='4'>Location: <br>${data.location}</td>
                         </tr>
                         <tr>
-                            <td colspan='4'>${data.bio}</td>
+                            <td colspan='4'>Bio:<br>${data.bio}</td>
                         </tr>
                         <tr>
-                            <td colspan='4' class='tTitle'><a href='${data.url}' target='_blank'>Github Url</td> 
+                            <td colspan='4' class='tTitle'><a href='${data.html_url}' target='_blank'>Github Url</a></td> 
                         </tr>
                         <tr>
                             <td colspan='4'>Profile created: ${data.created_at}</td>
@@ -57,8 +60,27 @@ function showMeData(){
                         </tr>
                     </table>
                 </div>
+                <div id="tableMobile">
+                    <table border=1>
+                        <tr>
+                            <td>ID: ${data.id}</td>
+                            <td>Name: ${data.name}</td>
+                            <td>Followers: ${data.followers}</td>
+                            <td>Following: ${data.following}</td>
+                            <td>Public Repositories: ${data.public_repos}</td>
+                            <td>Site: <a href='${data.blog}' target="_black"> Click here</a></td>
+                            <td>Location:${data.location}</td>
+                            <td>Bio: ${data.bio}</td>
+                            <td><a href='${data.html_url}' target='_blank'>Github Url</a></td> 
+                            <td>Profile created: ${data.created_at}</td>
+                            <td>Last update: ${data.updated_at}</td>
+                        </tr>
+                    </table>
+                </div>
+                
 
-            </div>`
+            </div>
+            `
         }     
     }
 }
